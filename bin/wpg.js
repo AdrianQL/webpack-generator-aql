@@ -1,19 +1,12 @@
 #!/usr/bin/env node
+import { getNewProgram, setParams } from '../lib/program.js';
+import { setInitCommand } from '../lib/commands.js';
 
 (function init() {
-  const { Command } = require('commander');
+  const program = getNewProgram();
 
-  const programn = new Command();
+  setParams(program);
+  setInitCommand(program);
 
-  programn.name('wpg').version('0.0.1').usage('<command> [options]');
-
-  programn
-    .command('test')
-    .description('Test command')
-    .argument('[string]', 'string to test', 'default')
-    .action((str) => {
-      console.log(`Test command: ${str}`);
-    });
-
-  programn.parse(process.argv);
+  program.parse(process.argv);
 })();
