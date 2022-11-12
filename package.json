@@ -1,0 +1,44 @@
+{
+  "name": "webpack-generator-aql",
+  "version": "1.0.22",
+  "description": "Friendly \"webpack\" command line generator",
+  "keywords": [
+    "webpack",
+    "generator",
+    "cli"
+  ],
+  "author": "Adrián Quesada López - AdrianQL",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianQL/webpack-generator-aql.git"
+  },
+  "scripts": {
+    "lint": "npm run lint:javascript",
+    "lint:javascript": "eslint index.js \"lib/*.js\" \"tests/**/*.js\""
+  },
+  "bin": {
+    "wpg": "bin/wpg.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "commander": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.2",
+    "prettier": "^2.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/AdrianQL/webpack-generator-aql/issues"
+  },
+  "homepage": "https://github.com/AdrianQL/webpack-generator-aql#readme"
+}
