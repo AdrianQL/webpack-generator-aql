@@ -1,6 +1,6 @@
 {
   "name": "webpack-generator-aql",
-  "version": "1.0.27",
+  "version": "1.1.0",
   "description": "Friendly \"webpack\" command line generator",
   "keywords": [
     "webpack",
