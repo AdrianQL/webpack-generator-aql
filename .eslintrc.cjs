@@ -4,7 +4,6 @@ const javascriptSettings = {
   rules: {
     'no-else-return': ['error', { allowElseIf: false }],
     'space-before-function-paren': ['error', 'never'],
-    // manual "semistandard" settings
     semi: ['error', 'always'],
     'no-extra-semi': 'error'
   }
