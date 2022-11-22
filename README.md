@@ -34,8 +34,11 @@ Options:
   -h, --help                     display help for command
 
 Commands:
-  init [options] [project-name]  Initialize a new project
+  init [options] [project-name]  create a new webpack project
   help [command]                 display help for command
+
+Example call:
+  $ wpg init project-name
  ```
 
 This command contains the **init** action which spawns the project.
@@ -47,18 +50,18 @@ wpg init [project-name]
 The init command contains the `help` options and the option to skip folder generation.
 
 ```sh
-
 Usage: wpg init [options] [project-name]
 
-Initialize a new project
+initialize a new webpack project
 
 Arguments:
-  project-name          Name of the project
+  project-name          [OPTIONAL] Name of the project (default: "webpack-aql-project")
 
 Options:
   -f, --skipped-folder  does not create folder
+  -l, --launch          project auto launch
+  -i, --info            info about the project
   -h, --help            display help for command
-
 ```
 
 
